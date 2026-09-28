@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book a session | En-Curious</title>
+    <meta
+      name="description"
+      content="Request an En-Curious tutoring session for UBC Chemistry 233. Zoom or in person, weekends and weekdays."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="icon" href="images/atom.png" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a class="brand" href="index.html">
+          <img src="images/atom.png" alt="" />
+          En-Curious
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          Menu
+        </button>
+        <nav id="nav-links" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="pricing.html">Pricing</a>
+          <a class="btn btn-primary" href="book.html" aria-current="page">Book a session</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <section class="page-hero">
+        <p class="kicker">Book tutoring</p>
+        <h1>Tell us what you want to learn.</h1>
+        <p>
+          We’ll match you with a Chem 233 session — Zoom or in person. Weekends
+          are our busiest (and best) window; weekdays are available too.
+        </p>
+      </section>
+
+      <section class="section">
+        <div
+          id="book-success"
+          class="success"
+          tabindex="-1"
+          role="status"
+        >
+          <h2>Request received.</h2>
+          <p>
+            Thanks — we’ll follow up by email to lock in time, format, and
+            whether you’re flying solo or bringing classmates.
+          </p>
+          <p><a class="btn btn-ghost" href="index.html">Back home</a></p>
+        </div>
+
+        <form action="https://formspree.io/f/xzezrrwk" method="POST" id="book-form" class="form">
+          <div class="form-row">
+            <label>
+              Name
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              Format
+              <select name="format" required>
+                <option value="zoom">Zoom</option>
+                <option value="in-person">In person</option>
+                <option value="either">Either works</option>
+              </select>
+            </label>
+            <label>
+              Session type
+              <select name="size" required>
+                <option value="1">1-on-1 · $35 / hr</option>
+                <option value="2">2-on-1 · $25 / student / hr</option>
+                <option value="3">3-on-1 · $20 / student / hr</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            When do you want to meet?
+            <select name="when" required>
+              <option value="weekend">Weekend (preferred)</option>
+              <option value="weekday">Weekday</option>
+              <option value="either">Either</option>
+            </select>
+          </label>
+          <label>
+            What should we work on?
+            <textarea
+              name="topic"
+              placeholder="Midterm 2 mechanisms, stereochem, a specific problem set…"
+            ></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send request</button>
+        </form>
+        <!-- modify this form HTML and place wherever you want your form -->
+      </section>
+    </main>
+
+    <footer class="wrap footer">
+      <div>En-Curious · UBC Chemistry 233 tutoring</div>
+      <div>No payment is collected on this page</div>
+    </footer>
+    <script src="script.js?v=3"></script>
+  </body>
+</html>
