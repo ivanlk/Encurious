@@ -92,15 +92,9 @@
           </div>
           <label>
             When do you want to meet?
-            <select name="when" required>
-              <option value="weekend">Weekend (preferred)</option>
-              <option value="weekday">Weekday</option>
-              <option value="either">Either</option>
-            </select>
-          </label>
+          <label for="appointment">Choose a date and time:</label>
+          <input type="datetime-local" id="appointment" name="appointment">
 
-        <label for="booking-time">Schedule Appointment (9 AM - 6 PM):</label>
-        <input type="time" id="booking-time" name="booking-time" min="09:00" max="18:00" step="900">
 
     
           <label>
