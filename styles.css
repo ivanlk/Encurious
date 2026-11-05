@@ -73,6 +73,57 @@ a {
   margin-inline: auto;
 }
 
+.free-session-banner {
+  background: linear-gradient(135deg, #e8f5ee, #d4f0e1);
+  border: 1px solid #b7dfc7;
+  border-radius: 16px;
+  padding: 40px 24px;
+  text-align: center;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.promo-label {
+  display: inline-block;
+  background: #18794e;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.free-session-banner h2 {
+  font-size: clamp(26px, 4vw, 36px);
+  margin: 18px 0 12px;
+  color: #153c2e;
+}
+
+.free-session-banner p {
+  color: #456457;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.free-session-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 13px 28px;
+  background: #18794e;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.free-session-btn:hover {
+  background: #105c3b;
+}
+
+
 .nav {
   position: sticky;
   top: 0;
