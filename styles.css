@@ -44,6 +44,10 @@ img {
   display: block;
 }
 
+.wrap stats {
+  position: center; 
+}
+
 a {
   color: inherit;
   text-decoration: none;
