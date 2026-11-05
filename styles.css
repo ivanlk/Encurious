@@ -46,7 +46,7 @@ img {
 
 .wrap stats {
   position: center; 
-}
+} /* This was just changed */
 
 a {
   color: inherit;
