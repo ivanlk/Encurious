@@ -448,6 +448,117 @@ a {
 }
 
 
+
+/* FREE TRIAL CARD */
+
+.free-trial-card {
+  background: #110b1c;
+  border: 1px solid #7135a5;
+  border-radius: 20px;
+  padding: 32px;
+  max-width: 700px;
+  margin: 40px auto;
+  color: #ffffff;
+  box-shadow: 0 8px 30px rgba(125, 50, 200, 0.15);
+}
+
+.free-trial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.free-trial-label {
+  color: #d4a0ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.free-trial-badge {
+  background: #153d2b;
+  color: #8de6ae;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.free-trial-card h2 {
+  font-size: 30px;
+  margin: 24px 0;
+  color: white;
+}
+
+.free-trial-price {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.free-trial-price .price {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.free-trial-price .price-description {
+  font-size: 16px;
+  color: #c5b4e4;
+}
+
+.free-trial-description {
+  color: #e8dff4;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.free-trial-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+}
+
+.free-trial-benefits li {
+  margin-bottom: 14px;
+  color: #e8dff4;
+}
+
+.free-trial-button {
+  display: inline-block;
+  background: linear-gradient(100deg, #c56af6, #8138fa);
+  padding: 14px 28px;
+  border-radius: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(135, 55, 250, 0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.free-trial-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(135, 55, 250, 0.4);
+}
+
+@media (max-width: 600px) {
+  .free-trial-card {
+    padding: 24px;
+    margin: 24px 16px;
+  }
+
+  .free-trial-card h2 {
+    font-size: 26px;
+  }
+}
+
+
+
+
 @media (max-width: 600px) {
   .free-trial-card {
     padding: 24px;
